@@ -42,7 +42,7 @@ The alternate method consists on adding two spaces at the end of the lines inste
 *Violets are blue*  
 *This poem sucks*
 
-It is so simple it is self-explanatory but it's basically a regular expression that replaces `\n` with the correct expression depending on the selected mode: `{space}{space}\n` or `\n\n` respectively. But it comes in pretty handy and I use it myself so I thought I'd upload it here.
+It is so simple it is self-explanatory but it's basically a regular expression that replaces `\n` with the correct expression depending on the selected mode: `{space}{space}\n` or `\n\n` respectively. But it comes in pretty handy and I use it myself so I thought I'd upload it here. It uses the libraries `pyperclip` for the copy-paste functionalities and `re` for regex.
 
 ## Example:
 
