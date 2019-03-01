@@ -14,7 +14,7 @@ def finalMessage(text):
     print("----------------\n")
     print(text)
     print("\n----------------")
-    paste = input("Paste to keyboard? (Y/n): ")
+    paste = input("Paste to clipboard? (Y/n): ")
     if (paste == "Y" or paste == "y"):
         pyperclip.copy(text)
         print("Copied to clipboard succesfully.")
