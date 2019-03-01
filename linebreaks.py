@@ -11,9 +11,9 @@ def smallBreaks(text):
 
 
 def finalMessage(text):
-    print("----------------")
-    print("\n" + text + "\n")
-    print("----------------")
+    print("----------------\n")
+    print(text)
+    print("\n----------------")
     paste = input("Paste to keyboard? (Y/n): ")
     if (paste == "Y" or paste == "y"):
         pyperclip.copy(text)
