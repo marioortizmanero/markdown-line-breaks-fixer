@@ -3,11 +3,11 @@ import re
 
 
 def bigBreaks(text):
-    return re.sub("\n", "\n\n", text)
+    return re.sub("\n+", "\n\n", text)
 
 
 def smallBreaks(text):
-    return re.sub("\n", "  \n", text)
+    return re.sub("\n+", "  \n", text)
 
 
 def finalMessage(text):
