@@ -1,4 +1,4 @@
-# Markup Line Breaks Fixer
+# Markdown Line Breaks Fixer
 
 This is a simple program that automatically converts single line-break text from your clipboard like this:
 
@@ -28,7 +28,7 @@ Into double line-break text like this:
 
 *This poem sucks*
 
-So that it can be used on sites using Markup like Reddit, StackOverflow, Github... where a double line break is needed to make a new paragraph.
+So that it can be used on sites using markdown like Reddit, StackOverflow, Github... where a double line break is needed to make a new paragraph.
 
 The alternate method consists on adding two spaces at the end of the lines instead of a double line-break to make the distance smaller between the line breaks:
 
