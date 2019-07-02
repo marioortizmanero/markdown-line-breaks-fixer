@@ -8,9 +8,13 @@ This is a simple program that automatically converts single line-break text from
 
 Which formatted looks like this:
 
-> *Roses are red*
+---
+
+*Roses are red*
 *Violets are blue*
 *This poem sucks*
+
+---
 
 Into double line-break text:
 
@@ -22,11 +26,15 @@ Into double line-break text:
 
 **Output 1:**
 
-> *Roses are red*
+---
 
-> *Violets are blue*
+*Roses are red*
 
-> *This poem sucks*
+*Violets are blue*
+
+*This poem sucks*
+
+---
 
 So that it can be used on sites using markdown like Reddit, StackOverflow, Github... where a double line break is needed to make a new paragraph.
 
@@ -38,9 +46,13 @@ The alternate method consists on adding two spaces at the end of the lines inste
 
 **Output 2:**
 
-> *Roses are red*  
-> *Violets are blue*  
-> *This poem sucks*
+---
+
+*Roses are red*  
+*Violets are blue*  
+*This poem sucks*
+
+---
 
 It is so simple it is self-explanatory but it's basically a regular expression that replaces `\n` with the correct expression depending on the selected mode: `{space}{space}\n` or `\n\n` respectively. But it comes in pretty handy and I use it myself so I thought I'd upload it here. It uses the libraries `pyperclip` for the copy-paste functionalities and `re` for regex.
 
