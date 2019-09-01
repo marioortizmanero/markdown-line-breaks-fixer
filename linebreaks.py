@@ -11,11 +11,11 @@ def smallBreaks(text):
 
 
 def finalMessage(text):
-    print("----------------\n")
-    print(text)
-    print("\n----------------")
-    paste = input("Paste to the clipboard? (Y/n): ")
-    if (paste == "Y" or paste == "y"):
+    print("### START OF TEXT ###\n"
+          f"{text}\n"
+          "### END OF TEXT ###")
+    paste = input("Paste to the clipboard? [Y/n]: ")
+    if paste in ("y", "Y", ""):
         pyperclip.copy(text)
         print("Copied to the clipboard succesfully.")
     else:
@@ -23,9 +23,9 @@ def finalMessage(text):
 
 
 while True:
-    print("\nLINE BREAKS FIXER")
-    print("   1. Small breaks (two spaces)")
-    print("   2. Big breaks (extra enter)")
+    print("\nLINE BREAKS FIXER\n"
+          "   1. Small breaks (two spaces)\n"
+          "   2. Big breaks (extra newline)")
     mode = str(input("Please select the mode (1 or 2): "))
     text = pyperclip.paste()
     if (mode == "1"):
