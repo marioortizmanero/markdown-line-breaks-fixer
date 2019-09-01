@@ -1,6 +1,6 @@
 # Markdown Line Breaks Fixer
 
-![Pic1](https://i.imgur.com/yXkiZrG.png)
+![Pic1](images/screenshot.png)
 
 Very simple tool to automatically convert single line-break text from your clipboard like this:
 
